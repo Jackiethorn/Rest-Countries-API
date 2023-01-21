@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="primary-navbar flex-row">
+            <div class="home-title">
+                <h1 class="home-title--text">Where in the world?</h1>
+            </div>
+            <div class="dark-mode-toggle">
+                <img class="dark-mode-toggle--logo" src="image/moon-outline.svg" alt="">
+                <span class="dark-mode-toggle--text">Dark Mode</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="filter-container flex-column">
+        <div class="input-container">
+            <img class="search-logo" src="image/search-outline.svg" alt="">
+            <input type="search" class="search-input" name="search" id="search" placeholder="Search for a country...">
+        </div>
+        <select class="filter-select" name="filter" id="filter">
+            <option selected value="">Filter by Region</option>
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </div>
+
+
+    <main>
+        <div class="container grid">
+            <div class="country-box">
+                <img class="country-image"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+                    alt="">
+                <h3 class="country-title">Germany</h3>
+                <div class="information-text">
+                    <h5>Population: <span class="population-text">81,770,900</span></h5>
+                    <h5>Region: <span class="region-text">Europe</span></h5>
+                    <h5>Capital: <span class="capital-text">Berlin</span></h5>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
